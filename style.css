@@ -1,0 +1,48 @@
+h1,h3,h5{
+    text-decoration: underline;
+}
+
+h1{
+    color: brown;
+}
+
+nav,footer{
+    background-color: #808080;
+    text-align: center;
+    padding-top: 50px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: #a9a9a9;
+}
+
+#image{
+    width: 350px;
+    height: 350px;
+}
+
+ul, ol{
+    text-align: left;
+}
+
+.icons{
+    width: 32px;
+    height: 32px;
+}
+
+.whatsappico{
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 4px 3px #999;
+    z-index: 100;
+}
