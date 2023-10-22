@@ -1,21 +1,29 @@
+body{
+    margin: 0;
+}
+
+html{
+    background-image: url(./lightbg2.jpg);
+
+}
+
 h1,h3,h5{
     text-decoration: underline;
 }
 
 h1{
     color: brown;
+    font-size: 4rem;
+}
+
+footer{
+    background-color: #171212;
+    color: #F1F1F1;
 }
 
 nav,footer{
-    background-color: #808080;
     text-align: center;
     padding-top: 50px;
-}
-
-body{
-    display: grid;
-    place-items: center;
-    background-color: #a9a9a9;
 }
 
 #image{
@@ -45,4 +53,26 @@ ul, ol{
     font-size: 30px;
     box-shadow: 3px 4px 3px #999;
     z-index: 100;
+}
+
+body>header{
+    background-color: rgba(23, 18, 18, 1)
+}
+
+header, footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header>img{
+    height: 256px;
+    width: 256px;
+}
+
+header>div>a>img.logo, footer>div>a>img{
+    height: 64px;
+    width: 64px;
+    filter: invert(1);
 }
