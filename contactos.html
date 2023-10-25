@@ -6,41 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potrero Digital TP</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
+
     <header>
-        <img src="./logo.png" alt="Logo Argentina Cuisine">
+        <img src="./imgs/logo.png" alt="Logo Argentina Cuisine">
         <h1>Recetas con Potrero Digital</h1>
         <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.png" alt="FB" class="logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" alt="IG" class="logo"></a>
-            <a href="https://www.linkedin.com/in/juanmapra/" target="_blank"><img src="./linkedin.png" alt="WPP"
+            <a href="https://www.facebook.com/" target="_blank"><img src="./imgs/facebook.png" alt="FB"
+                    class="logo"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/instagram.png" alt="IG"
+                    class="logo"></a>
+            <a href="https://www.linkedin.com/in/juanmapra/" target="_blank"><img src="./imgs/linkedin.png" alt="WPP"
                     class="logo"></a>
         </div>
     </header>
-    <nav>
+    <nav id="nav">
         Volver:
-        <a href="index.html">Home</a>
+        <a href="index.html" id="btncontactos">
+            <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                </svg></button>
+        </a>
+        |
+        <button type="button" class="btn btn-dark" onclick="darkmode()" id="darkmodebtn">Modo Oscuro</button>
+        <button type="button" class="btn btn-light" onclick="lightmode()" id="lightmodebtn">Modo Claro</button>
     </nav>
-    <footer>
+    <footer id="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.912483069851!2d-62.27898750145995!3d-38.7037696812624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb5b75ca3f5d%3A0xd273c0dd2111033d!2sAguado%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697743410228!5m2!1ses!2sar"
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.png" alt="FB"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" alt="IG"></a>
-            <a href="https://www.linkedin.com/in/juanmapra/" target="_blank"><img src="./linkedin.png" alt="WPP"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./imgs/facebook.png" alt="FB"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/instagram.png" alt="IG"></a>
+            <a href="https://www.linkedin.com/in/juanmapra/" target="_blank"><img src="./imgs/linkedin.png"
+                    alt="WPP"></a>
         </div>
         <div>
-            Desarrollador: Juan Manuel Prado
-            <br>
-            Email: juanmapra@yahoo.com.ar
-            <br>
-            Web: jmpdev.com
+            <button type="button" class="btn btn-info" onclick="alertaInfo()">Acerca del desarrollador.</button>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -13,14 +13,15 @@ h1,h3,h5{
     text-decoration: underline;
 }
 
-h1{
-    color: #6180c0;
+body>header>h1{
+    color: #bcbcbc;
     font-size: 4rem;
 }
 
 nav{
     background-image: linear-gradient(to bottom, rgba(23,18,18,1), rgba(204,202,204,1));
     font-size: 1.5rem;
+    padding-bottom: 50px;
 }
 
 footer{
@@ -91,9 +92,11 @@ main>header,main>section{
     align-items: center;
     justify-content: space-evenly;
     flex-basis: 100vw;
+    padding-bottom: 50px;
 }
 main>article,main>aside{
     flex-basis: 50%;
+    padding-bottom: 50px;
 }
 
 main>aside{
@@ -109,6 +112,24 @@ main>article>div{
 
 main>aside>div>h3, main>section>div>h3{
     text-align: center;
+}
+
+section{
+    background-color: #cccacc;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+.card{
+    width: 18rem;
+}
+
+#lightmodebtn{
+    display: none;
+}
+
+#btncont{
+    all: unset;
 }
 
 @media screen and (max-width: 1200px){
