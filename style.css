@@ -14,8 +14,13 @@ h1,h3,h5{
 }
 
 h1{
-    color: brown;
+    color: #6180c0;
     font-size: 4rem;
+}
+
+nav{
+    background-image: linear-gradient(to bottom, rgba(23,18,18,1), rgba(204,202,204,1));
+    font-size: 1.5rem;
 }
 
 footer{
@@ -40,21 +45,6 @@ ul, ol{
 .icons{
     width: 32px;
     height: 32px;
-}
-
-.whatsappico{
-    position: fixed;
-    width: 64px;
-    height: 64px;
-    bottom: 40px;
-    right: 15px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 3px 4px 3px #999;
-    z-index: 100;
 }
 
 body>header{
@@ -86,4 +76,61 @@ a{
 
 a:hover{
 color: red;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cccacc;
+    align-items: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+main>header,main>section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 100vw;
+}
+main>article,main>aside{
+    flex-basis: 50%;
+}
+
+main>aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+main>article>div{
+    padding-left: 5%;
+}
+
+main>aside>div>h3, main>section>div>h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    main>article,main>aside{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    main>aside>div#video{
+        display:none
+    }
+}
+
+@media screen and (min-width: 768px){
+    main>aside>div#imagen{
+        display:none
+    }
+}
+
+@media screen and (min-width: 992px){
+    main>aside>div#video, main>aside>div#imagen{
+        display:initial
+    }
 }
